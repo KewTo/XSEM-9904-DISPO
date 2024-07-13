@@ -55,11 +55,9 @@ def get_9904_dispo():
 
 
 # Compare the list of folders found, and the list of LOTs found in the Excel file; and printing out all in both list
-def compare_list():
+def main():
     print(set(IMO_Lots()) & set(get_9904_dispo()))
 
 
-compare_list()
-
 if __name__ == '__main__':
-    pass
+    main()
